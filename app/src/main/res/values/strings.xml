@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">PLCandroidx</string>
+    <string name="db_number">DB number</string>
+    <string name="db_offset">DB Offset</string>
+    <string name="read_value">Read value</string>
+    <string name="write_value">Write value</string>
+    <string name="write">Write</string>
+    <string name="read">Read</string>
+    <string name="connect">Connect</string>
+    <string name="ip_address">IP Address</string>
+    <string name="plc_to_android">PLC To Android</string>
+</resources>

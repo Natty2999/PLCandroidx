@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="345dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="@+id/textHeader"
+        app:layout_constraintTop_toBottomOf="@+id/textHeader">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/TextInputIpAddress"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:hint="@string/ip_address" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/buttonConnect"
+        android:layout_width="156dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="468dp"
+        android:text="@string/connect"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textInputLayout"
+        app:layout_constraintHorizontal_bias="0.587"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/buttonRead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/read"
+        app:layout_constraintBottom_toBottomOf="@+id/textInputLayout2"
+        app:layout_constraintStart_toEndOf="@+id/textInputLayout2" />
+
+    <Button
+        android:id="@+id/buttonWrite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/write"
+        app:layout_constraintBottom_toBottomOf="@+id/textInputLayout3"
+        app:layout_constraintStart_toEndOf="@+id/textInputLayout3" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout3"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/TextInputWrite"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:hint="@string/write_value" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout6"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout6">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/TextInputRead"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:hint="@string/read_value" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout6"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout7"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout7">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/TextInputDBOffset"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:hint="@string/db_offset" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout7"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/textInputLayout"
+        app:layout_constraintTop_toBottomOf="@+id/buttonConnect">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/TextInputDBNumber"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:hint="@string/db_number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textHeader"
+        android:layout_width="383dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="52dp"
+        android:text="@string/plc_to_android"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
